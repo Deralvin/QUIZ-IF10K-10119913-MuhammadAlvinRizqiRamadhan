@@ -30,7 +30,14 @@ public class ServicePrice implements ServiceItem {
     }
     @Override
     public void displayService() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("#*************************# ");
+        System.out.println("#***Rock n Roll Haircut***# ");
+        System.out.println("#*******Service List******# ");
+        System.out.println("1. Haircut : IDR 45K  ");
+        System.out.println("2. Haircut + Hairwash: IDR 55K  ");
+        System.out.println("3. Hairwash Only : IDR 15K ");
+        System.out.println("#*************************# ");
+        System.out.println("Choose (1/2/3): ");
     }
 
     @Override

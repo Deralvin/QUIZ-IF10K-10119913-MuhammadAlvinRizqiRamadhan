@@ -5,6 +5,9 @@
  */
 package quiz.if10k.pkg10119913.muhammadalvinrizqiramadhan;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author Lenovo
@@ -39,7 +42,9 @@ public class Customer extends ServicePrice implements CustomerInvoice {
 
     @Override
     public String currentTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
+        LocalDateTime now = LocalDateTime.now();  
+        return dtf.format(now);  
     }
     
 }

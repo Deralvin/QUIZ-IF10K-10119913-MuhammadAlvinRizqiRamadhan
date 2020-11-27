@@ -17,6 +17,8 @@ public class QUIZIF10k10119913MuhammadAlvinRizqiRamadhan {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ServicePrice servicePrice = new ServicePrice();
+        servicePrice.displayService();
     }
     
 }
