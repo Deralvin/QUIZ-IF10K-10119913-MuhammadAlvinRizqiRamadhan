@@ -43,11 +43,11 @@ public class ServicePrice implements ServiceItem {
     @Override
     public float getPrice(int serviceItem) {
         if(serviceItem ==1){
-            return 45;
+            return 45000;
         }else if(serviceItem == 2){
-            return 55;
+            return 55000;
         }else if(serviceItem == 3){
-            return 15;
+            return 15000;
         }
         
         return 0;
@@ -55,7 +55,8 @@ public class ServicePrice implements ServiceItem {
 
     @Override
     public boolean checkMemberStatus(String statusMember) {
-        if(statusMember.equals("Member")){
+         statusMember.toLowerCase();
+        if(statusMember.equals("yes")){
             return true;
         }else{
             return false;
@@ -64,7 +65,26 @@ public class ServicePrice implements ServiceItem {
 
     @Override
     public float getSale(boolean isMember, float parServicePrice) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+if(isMember)
+
+        {
+
+            return (float) (parServicePrice * 0.1);
+
+        }
+
+        else
+
+        {
+
+            return 0;
+
+        }//To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public float getTotalPay(float priceService,float discount){
+         return priceService - discount;
+        
     }
     
 }
