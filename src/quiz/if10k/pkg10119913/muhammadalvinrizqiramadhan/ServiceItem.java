@@ -10,5 +10,9 @@ package quiz.if10k.pkg10119913.muhammadalvinrizqiramadhan;
  * @author Lenovo
  */
 public interface ServiceItem {
+    public void displayService();
+    public float getPrice(int serviceItem);
+    public boolean checkMemberStatus(String statusMember);
+    public float getSale(boolean isMember,float parServicePrice);
     
 }

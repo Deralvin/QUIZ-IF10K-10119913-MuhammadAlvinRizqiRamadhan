@@ -9,6 +9,17 @@ package quiz.if10k.pkg10119913.muhammadalvinrizqiramadhan;
  *
  * @author Lenovo
  */
-public class ServicePrice {
+public class ServicePrice extends Customer implements ServiceItem {
+    float priceService;
+    float discount;
+    @Override
+    public void displayService() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public float getPrice() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
