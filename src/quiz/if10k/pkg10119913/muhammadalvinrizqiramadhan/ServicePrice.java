@@ -7,7 +7,9 @@ package quiz.if10k.pkg10119913.muhammadalvinrizqiramadhan;
 
 /**
  *
- * @author Lenovo
+ * Nama: Muhammad Alvin Rizqi Ramadhan
+ * Kelas : IF10K
+ * NIM : 10119913
  */
 public class ServicePrice implements ServiceItem {
     float priceService;
