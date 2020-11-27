@@ -42,12 +42,24 @@ public class ServicePrice implements ServiceItem {
 
     @Override
     public float getPrice(int serviceItem) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(serviceItem ==1){
+            return 45;
+        }else if(serviceItem == 2){
+            return 55;
+        }else if(serviceItem == 3){
+            return 15;
+        }
+        
+        return 0;
     }
 
     @Override
     public boolean checkMemberStatus(String statusMember) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(statusMember.equals("Member")){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override
