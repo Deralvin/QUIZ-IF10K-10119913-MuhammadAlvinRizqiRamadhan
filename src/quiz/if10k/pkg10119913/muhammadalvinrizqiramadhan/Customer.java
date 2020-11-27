@@ -9,7 +9,7 @@ package quiz.if10k.pkg10119913.muhammadalvinrizqiramadhan;
  *
  * @author Lenovo
  */
-public class Customer {
+public class Customer extends ServicePrice implements CustomerInvoice {
     String name,email;
     boolean member;
 
@@ -35,6 +35,11 @@ public class Customer {
 
     public void setMember(boolean member) {
         this.member = member;
+    }
+
+    @Override
+    public String currentTime() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
